@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-header',
@@ -6,9 +6,4 @@ import { Component, Output, EventEmitter } from "@angular/core";
     styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-    @Output() onSelectedPage = new EventEmitter<string>();
-
-    selectPage (pageName) {
-        this.onSelectedPage.emit(pageName);
-    }
 }
